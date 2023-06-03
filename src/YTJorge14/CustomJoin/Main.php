@@ -84,7 +84,7 @@ class Main extends PluginBase
     /**
      * Get an instance of JoinForm.
      *
-     * @return joinForm An instance of joinForm.
+     * @return FormJoin An instance of JoinForm.
      */
     public static function joinForm(): FormJoin
     {
