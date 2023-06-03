@@ -6,7 +6,7 @@ use pocketmine\Server;
 use pocketmine\player\Player;
 #---------------------------------
 
-use Vecnavium\Forms\SimpleForm;
+use Vecnavium\FormsUI\SimpleForm;
 
 use YTJorge14\CustomJoin\Main;
 use YTJorge14\CustomJoin\Utils\SoundsPM;
