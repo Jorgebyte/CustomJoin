@@ -18,7 +18,7 @@ class SoundsPM
      * @param Player $player The player to play the sound for.
      * @param string $sound The name of the sound to play.
      * @param int|float $volume The volume of the sound (default: 1).
-     * @param int|float $pitch The pitch of the sound (default: 1).
+     * @param float $pitch The pitch of the sound (default: 1).
      */
     public static function Sound(Player $player, string $sound, int $volume, float $pitch)
     {
