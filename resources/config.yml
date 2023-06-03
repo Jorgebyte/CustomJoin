@@ -1,0 +1,28 @@
+# Use "§" to change the color of the text to join and leave your server.
+
+# join message, use {nick} to indicate player name.
+custom-join-msg: "§e{nick} §aJoin"
+# message when exiting, use {nick} to indicate the player's name.
+custom-quit-msg: "§e{nick} §cLeave"
+
+# The following is the form that will be seen when a player enters,
+#  this only appears to the User who enters after closing,
+# remember that you can use "§" to change the color.
+
+# Title Form 
+title-form: "CustomJoin"
+# content form
+content-form: "edit config.yml"
+# Button close
+close-button: "Close"
+# Message when clicking close button 
+message-button: "Thanks for Using CustomJoin"
+# Message on the screen when pressing the button
+title-button:  "Welcome"
+# Sound Button
+sound-button: "random.anvil_land"
+
+#---------------------------
+# Remember that you can support this project with
+# ideas and errors in my discord: jorge.#1147
+#--------------------------
