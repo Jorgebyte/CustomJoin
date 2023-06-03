@@ -45,13 +45,30 @@ class Main extends PluginBase
      */
     public function onEnable(): void
     {
+
+        if (!$this->checkFormsUIDependency()) {
+            $this->getLogger()->error("The FormsUI plugin is not installed. Make sure you have it in the 'plugins' folder. https://poggit.pmmp.io/r/209836/FormsUI_dev-20.phar");
+            $this->getServer()->getPluginManager()->disablePlugin($this);
+            return;
+        }
+
         $this->loadFiles();
         $this-> loadEvents();
+
+    }
+    /**
+         * Checks if the FormsUI dependency is present.
+         *
+         * @return bool True if the dependency is present, false otherwise.
+         */
+    private function checkFormsUIDependency(): bool
+    {
+        return class_exists(\Vecnavium\FormsUI\FormsUI::class);
     }
 
     /**
-     * @return void
-     */
+         * @return void
+         */
     public function loadFiles(): void
     {
         try {
