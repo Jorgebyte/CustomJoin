@@ -53,22 +53,22 @@ class Main extends PluginBase
         }
 
         $this->loadFiles();
-        $this-> loadEvents();
+        $this->loadEvents();
 
     }
     /**
-         * Checks if the FormsUI dependency is present.
-         *
-         * @return bool True if the dependency is present, false otherwise.
-         */
+      * Checks if the FormsUI dependency is present.
+      *
+      * @return bool True if the dependency is present, false otherwise.
+      */
     private function checkFormsUIDependency(): bool
     {
         return class_exists(\Vecnavium\FormsUI\FormsUI::class);
     }
 
     /**
-         * @return void
-         */
+     * @return void
+     */
     public function loadFiles(): void
     {
         try {
